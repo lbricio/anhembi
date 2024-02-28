@@ -1,5 +1,3 @@
-package solucoes_computacionais.verificador_cpf;
-
 public class Main {
     public static void main(String[] args) {
 		try {

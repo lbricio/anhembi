@@ -22,20 +22,20 @@ public class Main {
 	private static String getDigito(String cpf) {
 		int sum;
 		String digito = "";
-
+	
 		// cálculo primeiro digito
 		sum = 0;
-		for (int j=0; j<9; j++)
-			sum += (j + 1) * Character.getNumericValue(cpf.charAt(j));
-		digito += (sum % 11 > 2) ? sum % 11 : 0;
-
+		for (int j = 0; j < 9; j++)
+			sum += (10 - j) * Character.getNumericValue(cpf.charAt(j));
+		digito += (sum % 11 < 2) ? 0 : (11 - sum % 11);
+	
 		// cálculo segundo digito
 		sum = 0;
-		for (int j=0; j<9; j++)
-			sum += j * Character.getNumericValue(cpf.charAt(j));
-		sum += Integer.parseInt(digito) * 9;
-		digito += (sum % 11 > 2) ? sum % 11 : 0;
-
+		for (int j = 0; j < 9; j++)
+			sum += (11 - j) * Character.getNumericValue(cpf.charAt(j));
+		sum += Integer.parseInt(digito) * 2;
+		digito += (sum % 11 < 2) ? 0 : (11 - sum % 11);
+	
 		return digito;
 	}
 }

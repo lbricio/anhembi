@@ -32,6 +32,7 @@ public class MinhaClasse {
 - static: signica que esse método pertence a classe em si e não a uma instância
 - o que são instâncias? é quando criamos uma "cópia" da classe a partir da classe base
 - é mais comum o termo `objeto` para se referir a instância de alguma classe
+- instância seria apenas a relação do objeto com sua classe base
 - metodos estáticos não são herdados em instâncias/objetos da classe
 - e porque criar cópias da classe? ao instanciar podemos criar classes com atributos únicos
 > exemplo: classe carro  

@@ -31,7 +31,8 @@ public class MinhaClasse {
 ### static
 - static: signica que esse método pertence a classe em si e não a uma instância
 - o que são instâncias? é quando criamos uma "cópia" da classe a partir da classe base
-- metodos estáticos não são herdados em instâncias da classe
+- é mais comum o termo `objeto` para se referir a instância de alguma classe
+- metodos estáticos não são herdados em instâncias/objetos da classe
 - e porque criar cópias da classe? ao instanciar podemos criar classes com atributos únicos
 > exemplo: classe carro  
 > atributos (variáveis): cor = vermelho, modelo = "mustang shelby gt500", ano de fabricação = 1967;  
@@ -70,7 +71,7 @@ public class Main {
 
 - agora adicionamos uma verificação se todos os caracteres são realmente dígitos
 - usamos o método .matches() que funciona com strings
-- usamos "\\d+" que é um código regex que verifica se há apenas digitos 
+- usamos `"\\d+"` que é um código regex que verifica se há apenas digitos 
 
 ```java
   // . . .
@@ -79,5 +80,4 @@ public class Main {
     System.out.println("cpf inválido, deve conter apenas dígitos");
     return;
   }
-```
-
+``` 
